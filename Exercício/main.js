@@ -1,4 +1,51 @@
 
+const nomeENota = [
+    {
+        nome: 'Felipe',
+        nota: 5.8,
+    },
+    {
+        nome: 'Faby',
+        nota: 7,
+    }, 
+    {
+        nome: 'Fran',
+        nota: 5.6,
+    },
+    {
+        nome: 'Ehhy',
+        nota: 8,
+    },
+    {
+        nome: 'Mica',
+        nota: 5.9,
+    },
+    {
+        nome: 'Gabriel',
+        nota: 9,
+    },
+    {
+        nome: 'João',
+        nota: 9.3
+    }
+]
+
+console.log(nomeENota)
+
+
+function aprovados() {
+    let alunosAprovados = nomeENota.filter(alunosAprovados => alunosAprovados.nota >= 6)
+    console.log(alunosAprovados);
+}
+
+aprovados()
+
+
+
+
+/*  
+                                Pose ser assim também, só que dá mais trabalho.
+
 const nomeENota = {
     // atributos
     Felipe: 5.8,
@@ -12,9 +59,10 @@ const nomeENota = {
 }
 
 console.log(nomeENota)
+console.log("")
 console.log('==================================')
 
-const al = ['Felipe']; 
+const al = ['Ricardo'];
 const alunos2 = al.map(function(itemAtual) {
         return {
         nome: itemAtual,
